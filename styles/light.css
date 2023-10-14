@@ -19,7 +19,7 @@
   --bg-image: url(../images/cover-image-light.png);
 }
 
-.page.theme_light .header .decoration-item {
+.page.theme_light .decoration-item {
   display: none;
 }
 
@@ -31,9 +31,5 @@
     --title-color: #FFC2E6;
     --title-decor: #FF8DCB;
     --bg-image: url(../images/cover-image-light.png);
-    }
-
-  .header .decoration-item {
-    display: none;
-  }  
+    }  
 }

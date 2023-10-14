@@ -34,6 +34,7 @@
   color: var(--accent-color);
   padding-inline: 13px;
   height: 26px;
+  width: 71px;
   text-transform: lowercase;
 }
 
@@ -43,6 +44,7 @@
 
 .header__theme-menu-button:hover {
   border: 1px solid currentColor;
+  
 }
 
 .header__theme-menu-button:focus {
@@ -72,6 +74,7 @@
   box-shadow: 0 0 8px 4px var(--accent-color);
   background-color: var(--accent-color);
   top: 8px;
+  left: 32px;
 }
 
 .header__title {
@@ -147,28 +150,32 @@
   line-height: 1.3;
 }
 
-.content-paragraph a {
+.text-link {
   color: inherit;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--title-decor);
 }
 
-.content-paragraph a:hover {
+.text-link:hover {
   text-decoration-line: underline;
   text-decoration-color: currentColor;
 }
 
-.content-paragraph a:focus {
+.text-link:focus {
   outline: none;
 }
 
-.content-paragraph a:focus-visible {
+.text-link:focus-visible {
   outline: 1px solid currentColor;
 }
 
 .content-title-regular {
   font-weight: 400;
   line-height: 1.3;
+}
+
+.content-title-regular:first-of-type {
+  margin-block-start: 20px;
 }
 
 .pictures__item {
@@ -263,7 +270,11 @@
     margin-block-start: 0;
   }
 
-  .block-row {
+  .content-title-regular:first-of-type {
+    margin-block-start: 20px;
+  }
+
+  .content__section-second .content__section-title {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -361,18 +372,18 @@
   .content__section-first {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
-  }
-
-  .content__section-first div:last-of-type {
-    margin-inline-start: -7px;
+    gap: 12px;
   }
 
   .content-title:first-of-type {
     margin-block-start: 0;
   }
 
-  .block-row {
+  .content-title-regular:first-of-type {
+    margin-block-start: 20px;
+  }
+
+  .content__section-second .content__section-title {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
@@ -388,11 +399,7 @@
   .content__section-third {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
-  }
-
-  .content__section-third div:last-of-type {
-    margin-inline-start: -7px;
+    gap: 12px;
   }
 
   .pictures__item {
