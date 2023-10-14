@@ -14,8 +14,6 @@
   --accent-color: #FF0070;
   --title-color: #DB00FF;
   --title-decor: #FF0070;
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
-.page.theme_dark .header {
-  background-image: url(../images/cover-image-dark.png);
-}

@@ -10,7 +10,7 @@
 }
 
 .header {
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -39,6 +39,18 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid currentColor;
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-block-end: 1px solid currentColor;
 }
 
 .decoration-item {
@@ -139,6 +151,19 @@
   color: inherit;
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--title-decor);
+}
+
+.content-paragraph a:hover {
+  text-decoration-line: underline;
+  text-decoration-color: currentColor;
+}
+
+.content-paragraph a:focus {
+  outline: none;
+}
+
+.content-paragraph a:focus-visible {
+  outline: 1px solid currentColor;
 }
 
 .content-title-regular {
